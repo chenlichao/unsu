@@ -21,8 +21,8 @@ public:
   void load(string fsfn, string clusfn) override; // load feature and indice
                                                   // list
 protected:
-  vector<int> clus; // cluster tag
-  Mat feavec;       // feature index, hold memory
-	Ptr<TrainData> trainingData; // A wrapper of above
-	Ptr<KNearest> kclassifier = KNearest::create(); // knn classifier
+  vector<int> clus;                               // cluster tag
+  Mat feavec;                                     // feature index, hold memory
+  Ptr<TrainData> trainingData;                    // A wrapper of above
+  Ptr<KNearest> kclassifier = KNearest::create(); // knn classifier
 };

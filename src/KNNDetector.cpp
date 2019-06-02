@@ -18,7 +18,8 @@ void KNNDetector::load(string vecfn, string clusfn) {
 
   trainingData = TrainData::create(feavec, ml::ROW_SAMPLE, clus);
 
-  kclassifier->setIsClassifier(0);
+  // We are using classifier mode
+  kclassifier->setIsClassifier(1);
   kclassifier->setAlgorithmType(KNearest::BRUTE_FORCE);
   kclassifier->setDefaultK(11);
 

@@ -26,9 +26,9 @@ public:
                                             // text file, and init index
 
 private:
-  vector<int> clus; // cluster tag
+  vector<int> clus;         // cluster tag
   shared_ptr<Index> feaind; // index for knn search
-  Mat feavec; // feature index, hold memory
-  int vlen; // hard coded vector length, not good..
+  Mat feavec;               // feature index, hold memory
+  int vlen;                 // hard coded vector length, not good..
   void init();
 };
