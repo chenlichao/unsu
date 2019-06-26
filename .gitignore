@@ -7,6 +7,8 @@
 .ycm_extra_conf.pyc
 __pycache__
 
+# for vscode
+.vscode/
 
 # for YouCompleteMe
 compile_commands.json
